@@ -73,7 +73,7 @@ const App = () => {
     setIsPlanning(true);
 
     // API configuration
-    const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+    const apiKey = process.env.REACT_APP_VITE_GEMINI_API_KEY;
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
     // Construct the dynamic prompt for the AI
